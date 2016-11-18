@@ -41,8 +41,19 @@ void setup() {
 
 void loop() {
 
- fill_solid( leds, NUM_LEDS, CRGB::Blue);
+fill_solid( leds, NUM_LEDS, CRGB:: AliceBlue);
+FastLED.show();
+delay(2000);
 
- FastLED.show();
+fill_solid(leds, NUM_LEDS, CRGB ::Amethyst);
+FastLED.show();
+delay(2000);
 
+fill_solid(leds, NUM_LEDS, CRGB :: AntiqueWhite);
+FastLED.show();
+delay(2000);
+
+fill_solid(leds, NUM_LEDS, CRGB :: Azure);
+FastLED.show();
+delay(2000);
 }
