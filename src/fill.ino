@@ -29,31 +29,33 @@ CRGB leds[NUM_LEDS];
 
 
 
-
 void setup() {
 
     FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection( TypicalLEDStrip );
     FastLED.setBrightness(  BRIGHTNESS );
-
-
 }
 
 
 void loop() {
 
-fill_solid( leds, NUM_LEDS, CRGB:: AliceBlue);
+
+fill_solid(leds, NUM_LEDS, CRGB :: Blue);
 FastLED.show();
 delay(2000);
 
-fill_solid(leds, NUM_LEDS, CRGB ::Amethyst);
+fill_solid(leds, NUM_LEDS, CRGB :: BlueViolet);
 FastLED.show();
 delay(2000);
 
-fill_solid(leds, NUM_LEDS, CRGB :: AntiqueWhite);
+fill_solid(leds, NUM_LEDS, CRGB::CadetBlue);
 FastLED.show();
 delay(2000);
 
-fill_solid(leds, NUM_LEDS, CRGB :: Azure);
+fill_solid(leds, NUM_LEDS, CRGB::Crimson);
+FastLED.show();
+delay(2000);
+
+fill_solid(leds, NUM_LEDS, CRGB::DarkOrchid);
 FastLED.show();
 delay(2000);
 }
